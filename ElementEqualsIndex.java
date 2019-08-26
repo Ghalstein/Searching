@@ -9,7 +9,23 @@ import java.util.*;
 public class ElementEqualsIndex {
 
 	private static int search(ArrayList<Integer> arr, int l, int m, int h) {
-		
+		// handles out of bounds errors
+		if (l > h) {
+			return -1;
+		}
+		else if (l < 0) {
+			return -1;
+		}
+
+		if (arr.get(m) == m) {
+			return m;
+		}
+		else if (arr.get(m) > m) {
+			// go lower
+		}
+		else {
+			// go higher
+		}
 	}
 
 	public static int search(ArrayList<Integer> arr) {
