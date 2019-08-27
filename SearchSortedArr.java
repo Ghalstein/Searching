@@ -36,6 +36,6 @@ public class SearchSortedArr {
 		arr.add(5);
 		arr.add(6);
 		arr.add(7);
-		search(arr, 3);
+		System.out.println(search(arr, 3));
 	}
 }
