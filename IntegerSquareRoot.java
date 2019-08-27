@@ -4,8 +4,12 @@ public class IntegerSquareRoot {
 	private static int sqrt(int n, int l, int m, int h) {
 
 		// handles any out of bounds errors
-		if (n < 0 || l < 0 || l > h) {
+		if (n < 0 || l < 0) {
 			return -1;
+		}
+
+		if (l > h) {
+			return m;
 		}
 
 		// if the sqaure root is found;
@@ -36,6 +40,6 @@ public class IntegerSquareRoot {
 
 	public static void main(String[] args) {
 		System.out.println("test for 16: " + sqrt(16));
-		System.out.println("test for 64: " + sqrt(64));
+		System.out.println("test for 60: " + sqrt(12));
 	}
 }
