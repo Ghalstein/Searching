@@ -14,7 +14,13 @@ public class IntegerSquareRoot {
 		}
 		else if (n / m > m) {
 			l = m + 1;
-			m = l + h (h - l) / 2;
+			m = l + (h - l) / 2;
+			return (sqrt(n, l, m, h));
+		}
+		else {
+			h = m - 1;
+			m = l + (h - l) / 2;
+			return (sqrt(n, l, m, h));
 		}
 
 	}
@@ -22,13 +28,14 @@ public class IntegerSquareRoot {
 	// finds the int square root
 	public static int sqrt(int num) {
 		int low = 0;
-		int high = int;
+		int high = num;
 		int med = low + (high - low) / 2;
 		return sqrt(num, low, med, high);
 
 	}
 
 	public static void main(String[] args) {
-
+		System.out.println("test for 16: " + sqrt(16));
+		System.out.println("test for 64: " + sqrt(64));
 	}
 }
