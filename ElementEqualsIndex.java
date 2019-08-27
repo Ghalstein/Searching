@@ -21,10 +21,14 @@ public class ElementEqualsIndex {
 			return m;
 		}
 		else if (arr.get(m) > m) {
-			// go lower
+			h = m - 1;
+			m = l + (h - l) / 2;
+			return search(arr, l, m, h);
 		}
 		else {
-			// go higher
+			l = m + 1;
+			m = l + (h - l) / 2;
+			return search(arr, l, m, h);
 		}
 	}
 
