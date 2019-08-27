@@ -12,6 +12,11 @@ public class IntegerSquareRoot {
 		if (n / m == m) {
 			return m;
 		}
+		else if (n / m > m) {
+			l = m + 1;
+			m = l + h (h - l) / 2;
+		}
+
 	}
 
 	// finds the int square root
