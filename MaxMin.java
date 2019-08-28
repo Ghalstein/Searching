@@ -25,5 +25,15 @@ public class MaxMin {
 
 	public static void main(String[] args) {
 
+		ArrayList<Integer> list = new ArrayList<>();
+		list.add(3);
+		list.add(2);
+		list.add(5);
+		list.add(31);
+		list.add(-9);
+		list.add(42);
+		list.add(-24);
+		list.add(30);
+		System.out.println(Arrays.toString(find(list)));
 	}
 }
