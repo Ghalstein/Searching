@@ -40,6 +40,6 @@ public class IntegerSquareRoot {
 
 	public static void main(String[] args) {
 		System.out.println("test for 16: " + sqrt(16));
-		System.out.println("test for 60: " + sqrt(12));
+		System.out.println("test for 12: " + sqrt(12));
 	}
 }
